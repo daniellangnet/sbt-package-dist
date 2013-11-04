@@ -6,7 +6,6 @@ import Keys._
 import sbt._
 import Keys._
 import com.twitter.sbt._
-import com.twitter.sbt.SubversionPublisher._
 
 /**
  * capture an SBT ModuleID along with a git URL, subproject within that repo,
