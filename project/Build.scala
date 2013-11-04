@@ -11,12 +11,14 @@ object PackageDistPlugin extends Build {
 
   val SCALA_VERSION = "2.10.3"
 
-  lazy val buildSettings = Defaults.defaultSettings ++ scriptedSettings ++ Seq[Setting[_]](
-    sbtPlugin := true,
-    organization := "com.twitter",
-    name := "sbt-package-dist",
-    version := "1.1.3"
-  )
+  lazy val buildSettings = 
+    Defaults.defaultSettings ++ scriptedSettings ++ 
+    Seq[Setting[_]](
+      sbtPlugin := true,
+      organization := "com.twitter",
+      name := "sbt-package-dist",
+      version := "1.1.3"
+    )
 
   lazy val root = Project(
     id = "sbt-package-dist",

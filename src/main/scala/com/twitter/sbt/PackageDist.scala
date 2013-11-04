@@ -147,7 +147,7 @@ object PackageDist extends Plugin {
     }.getOrElse(Seq()).toSet
   }
 
-  val newSettings = Seq(
+  val packageDistSettings = Seq(
     exportJars := true,
 
     // export source and docs
